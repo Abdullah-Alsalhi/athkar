@@ -3,8 +3,8 @@
   margin: 15px;
 }
 
-.Count{
-  border: 3px blue solid;
+.Count {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,3 +36,4 @@
     transform: rotate(360deg);
   }
 }
+

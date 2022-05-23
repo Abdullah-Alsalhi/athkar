@@ -1,9 +1,13 @@
 import React from 'react'
 
 export default function Count(props) {
-  const {name} = props
-  console.log(name)
+  const {times} = props
   return (
-    <div className='Count'>Hello {name}</div>
+    <div className='Count'>
+      <button>countdown {times}</button>
+      <a href="" id="cat-1" class="btn btn-success active btn-full-width catlink">
+<span class="catbutton arabicfont">أذكار الصباح</span>
+</a>
+    </div>
   )
 }
