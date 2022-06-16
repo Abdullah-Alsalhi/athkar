@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-success shadow p-3 mb-5">
+      <nav className="navbar navbar-expand-lg nv-bg shadow p-3 mb-5">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -62,6 +63,7 @@ export default function Navbar() {
                 className="btn"
                 style={{ backgroundColor: "#EEE", color: "#198754" }}
                 type="submit"
+                
               >
                 ابحث
               </Link>

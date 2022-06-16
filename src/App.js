@@ -6,18 +6,21 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Morning from "./components/Morning";
+import Hadith from "./components/Hadith";
 function App() {
   return (
     <div className="App page">
       <Navbar />
       <div className="container">
         <Header />
+        
         {/* this route will take you to / */}
         <Routes>
           <Route
             path="/"
             element={
               <div className="d-grid gap-2 col-6 mx-auto mt-4">
+                <Hadith/>
                 <Link to="/sabah" className="btn btn-success" type="button">
                   أذكار الصباح
                 </Link>
@@ -45,7 +48,6 @@ function App() {
         <Routes>
           <Route path="/missing_page" element={<h1 >لم يتم العمل على هذه الصفحة حتى الان</h1>}/>
         </Routes>
-        
         <Footer />
       </div>
     </div>
