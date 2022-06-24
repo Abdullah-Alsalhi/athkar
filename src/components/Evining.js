@@ -28,7 +28,7 @@ export default function Evining() {
               }
               if (event.target.innerText == 1) {
                 event.target.style = "background: #0a4c59";
-                
+              
               }
               event.target.innerText--;
             }}>{e.count}</button>
