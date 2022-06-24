@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Morning from "./components/Morning";
 import Hadith from "./components/Hadith";
+import Evining from "./components/Evining";
 function App() {
   return (
     <div className="App page">
@@ -44,6 +45,16 @@ function App() {
         </Routes>
         {/* end of morning athkar page */}
 
+        {/* this route will take you to evining athkar page */}
+        <Routes>
+          <Route path="/massa" element={
+          <div className="d-grid gap-2 col-6 mx-auto mt-4">
+          <Evining />
+          <Link to="/" className="btn btn-success" type="button">إلى الصفحة الرئيسية</Link>
+          </div>
+          } />
+        </Routes>
+        {/* end of evining athkar page */}
         {/* missing_page route */}
         <Routes>
           <Route path="/missing_page" element={<h1 >لم يتم العمل على هذه الصفحة حتى الان</h1>}/>
