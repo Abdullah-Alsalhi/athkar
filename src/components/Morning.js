@@ -14,27 +14,9 @@ export default function Morning() {
             <p className='card-text'>{e.zekr}</p>
             <div className='d-grid gap-2 col-6 mx-auto mt-4'>
             <button type='button' className='btn btn-success' onClick={(event)=> {
-<<<<<<< HEAD
               if (event.target.innerText == 1) {
                 event.target.style = "background: blue";
                 event.target.disabled = true;
-=======
-
-              if (event.target.innerText == "انتقل للذكر التالي") {
-                
-                event.target.disabled = true;
-                return;
-              }
-
-              if (event.target.innerText == 0) {
-                event.target.style = "background: #0a4c59";
-                event.currentTarget.innerText = "انتقل للذكر التالي";
-                return;
-              }
-              if (event.target.innerText == 1) {
-                event.target.style = "background: #0a4c59";
-                
->>>>>>> ca29e5f (make the button countable)
               }
               event.target.innerText--;
             }}>{e.count}</button>
