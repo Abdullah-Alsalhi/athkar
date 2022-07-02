@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Morning from "./components/Morning";
-import Hadith from "./components/Hadith";
+
 import Evining from "./components/Evining";
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             path="/"
             element={
               <div className="d-grid gap-2 col-6 mx-auto mt-4">
-                <Hadith/>
+                
                 <Link to="/sabah" className="btn btn-success" type="button">
                   أذكار الصباح
                 </Link>

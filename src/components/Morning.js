@@ -3,7 +3,7 @@ import athkar from '../thekr-json/athkar.json'
 export default function Morning() {
   
   return (
-    <div className=''>
+    <div className='mt-5 text-center'>
       {athkar.filter(e => e.category === "أذكار الصباح").map(e => { return (
         <div className='card text-center my-3'>
           <div className='card-header'>
