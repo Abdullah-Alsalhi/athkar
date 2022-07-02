@@ -13,15 +13,15 @@ function App() {
     <div className="App page">
       <Navbar />
       <div className="container">
-        <Header />
+        
         
         {/* this route will take you to / */}
         <Routes>
           <Route
             path="/"
             element={
-              <div className="d-grid gap-2 col-6 mx-auto mt-4">
-                
+              <div className="d-grid gap-2 col-11 mx-auto mt-4">
+                <Header />
                 <Link to="/sabah" className="btn btn-success" type="button">
                   أذكار الصباح
                 </Link>
@@ -37,7 +37,7 @@ function App() {
         {/* this route will take you to moring athkar page */}
         <Routes>
           <Route path="/sabah" element={
-          <div className="d-grid gap-2 col-6 mx-auto mt-4">
+          <div className="d-grid gap-2 col-11 mx-auto mt-4">
           <Morning />
           <Link to="/" className="btn btn-success" type="button">إلى الصفحة الرئيسية</Link>
           </div>
@@ -48,9 +48,11 @@ function App() {
         {/* this route will take you to evining athkar page */}
         <Routes>
           <Route path="/massa" element={
-          <div className="d-grid gap-2 col-6 mx-auto mt-4">
+          <div >
           <Evining />
+          <div className="d-grid gap-2 col-11 mx-auto mt-4">
           <Link to="/" className="btn btn-success" type="button">إلى الصفحة الرئيسية</Link>
+          </div>
           </div>
           } />
         </Routes>

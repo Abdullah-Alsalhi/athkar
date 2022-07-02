@@ -50,18 +50,17 @@ export default function Navbar() {
             </ul>
             <form className="d-flex " role="search">
               <input
-              
                 disabled
                 className="form-control me-2 searchBar"
                 type="search"
-                placeholder="سور القرآن"
+                placeholder="اسم السورة..."
                 aria-label="Search"
               />
               <Link
                 disabled
                 to="/missing_page"
                 className="btn"
-                style={{ backgroundColor: "#EEE", color: "#198754" }}
+                style={{ backgroundColor: "#297F87" }}
                 type="submit"
                 
               >

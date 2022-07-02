@@ -1,28 +1,36 @@
 /* importing the font of ciro */
-
+:root {
+  --main-i-color: #297F87;
+  --main-ii-color: #FFF7AE;
+  --main-iii-color: #F6D167;
+  --main-iv-color: #DF2E2E;
+}
 @import url('https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@700&family=Jomhuria&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap');
 
 .App {
   direction: rtl;
-font-family: 'Blaka', cursive;
-font-family: 'Cairo', sans-serif;
-font-family: 'Jomhuria', cursive;
-font-family: 'Noto Kufi Arabic', sans-serif;
-
-
+  font-family: 'Blaka', cursive;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Jomhuria', cursive;
+  font-family: 'Noto Kufi Arabic', sans-serif;
   color: #198754;
 }
-
+.btn-bg-ii{
+  background-color: #297F87;
+}
 ::selection {
-  background-color: rgb(25 135 84 / 30%);
-  color: #fff;
+  background-color: var(--main-i-color);
+  color: var(--main-iii-color);
 }
 
-.nv-bg {
-  background-color: #0a4c59 ;
-  color: #0a4c59 !important;
+.thek-cont {
+  border: 1px solid var(--main-i-color);
 }
 /* 
 
 
 */
+
+* {
+  color: #FFF7AE 
+}
