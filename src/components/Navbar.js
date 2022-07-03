@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg nv-bg shadow p-3 mb-5">
-        <div className="container-fluid">
+    <div className="">
+      <nav className=" navbar navbar-expand-lg nv-bg shadow p-3 mb-5">
+        <div className= "container-fluid">
           <button
             className="navbar-toggler"
             type="button"

@@ -20,7 +20,7 @@ export default function Evining() {
                       <p className=''>
                         {e.description}
                       </p>
-                      <button className='btn btn-bg-ii  col-md-6 my-3' onClick={(event)=>{
+                      <button className='btn btn-bg-ii  col-md-6 my-3' style={{color: "#F6D167", fontSize:"1.2rem"}} onClick={(event)=>{
                         if (event.target.innerText == "انتقل للذكر التالي") {
                 
                           event.target.disabled = true;
