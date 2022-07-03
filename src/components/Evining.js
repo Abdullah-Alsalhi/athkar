@@ -20,13 +20,15 @@ export default function Evining() {
                       <p className=''>
                         {e.description}
                       </p>
+                      <div className="d-grid gap-2 col-11 mx-auto mt-4">
+
                       <button className='btn btn-bg-ii  col-md-6 my-3' style={{color: "#F6D167", fontSize:"1.2rem"}} onClick={(event)=>{
                         if (event.target.innerText == "انتقل للذكر التالي") {
-                
+                          
                           event.target.disabled = true;
                           return;
                         }
-          
+                        
                         if (event.target.innerText == 0) {
                           event.target.style = "background: #0a4c59";
                           event.currentTarget.innerText = "انتقل للذكر التالي";
@@ -34,10 +36,11 @@ export default function Evining() {
                         }
                         if (event.target.innerText == 1) {
                           event.target.style = "background: #0a4c59";
-                        
+                          
                         }
                         event.target.innerText--;
                       }}>{e.count}</button>
+                      </div>
                 </div>
               )
             })}
