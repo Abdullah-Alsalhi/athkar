@@ -3,7 +3,7 @@ import athkar from '../thekr-json/athkar.json'
 export default function Morning() {
   
   return (
-    <div className='text-center'>
+    <div className='text-center '>
       
             <div className='row'>
             <div className='col-md-12'>
@@ -21,7 +21,7 @@ export default function Morning() {
                         {e.description}
                       </p>
                       <div className="d-grid gap-2 col-11 mx-auto mt-4">
-                      <button className='btn btn-bg-ii col-md-6 my-3' style={{color: "#F6D167", fontSize:"1.2rem"}} onClick={(event)=>{
+                      <button className='btn btn-bg-ii col-md-12 my-3' style={{color: "#F6D167", fontSize:"1.2rem"}} onClick={(event)=>{
                         if (event.target.innerText == "انتقل للذكر التالي") {
                           event.target.disabled = true;
                           return;
