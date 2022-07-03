@@ -60,7 +60,7 @@ export default function Navbar() {
                 disabled
                 to="/missing_page"
                 className="btn"
-                style={{ backgroundColor: "#297F87" }}
+                style={{ backgroundColor: "#297F87", color: "#F6D167" }}
                 type="submit"
                 
               >
