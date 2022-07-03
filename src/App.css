@@ -17,6 +17,7 @@
 }
 .btn-bg-ii{
   background-color: #297F87;
+  color: var(--main-iii-color);
 }
 ::selection {
   background-color: var(--main-i-color);
@@ -26,6 +27,8 @@
 .thek-cont {
   border: 1px solid var(--main-i-color);
 }
+
+
 /* 
 
 

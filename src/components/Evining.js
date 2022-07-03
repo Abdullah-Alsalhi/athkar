@@ -22,7 +22,7 @@ export default function Evining() {
                       </p>
                       <div className="d-grid gap-2 col-11 mx-auto mt-4">
 
-                      <button className='btn btn-bg-ii  col-md-6 my-3' style={{color: "#F6D167", fontSize:"1.2rem"}} onClick={(event)=>{
+                      <button className='btn btn-bg-ii  col-md-12 my-3' style={{color: "#F6D167", fontSize:"1.2rem"}} onClick={(event)=>{
                         if (event.target.innerText == "انتقل للذكر التالي") {
                           
                           event.target.disabled = true;

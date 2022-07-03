@@ -39,7 +39,7 @@ export default function Navbar() {
                   className="nav-link text-white"
                   href="#"
                 >
-                  فضل الذكر
+                  أدعية نبوية
                 </Link>
               </li>
               <li className="nav-item">
