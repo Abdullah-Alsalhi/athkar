@@ -1,5 +1,7 @@
 import React from 'react'
 import athkar from '../thekr-json/athkar.json'
+import {toArabic} from 'arabic-digits';
+
 export default function Morning() {
   
   return (
