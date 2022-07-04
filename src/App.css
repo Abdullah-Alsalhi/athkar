@@ -9,9 +9,9 @@
 
 .App {
   direction: rtl;
-  font-family: 'Blaka', cursive;
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Jomhuria', cursive;
+  /* font-family: 'Blaka', cursive; */
+  /* font-family: 'Cairo', sans-serif; */
+  /* font-family: 'Jomhuria', cursive; */
   font-family: 'Noto Kufi Arabic', sans-serif;
   color: #198754;
 }
