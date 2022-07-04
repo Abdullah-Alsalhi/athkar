@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Morning from "./components/Morning";
-
+import Quran from "./components/Quran";
 import Evining from "./components/Evining";
 function App() {
   return (
@@ -56,6 +56,16 @@ function App() {
           </div>
           } />
         </Routes>
+
+        {/* start quran route */}
+        <Routes>
+          <Route path="/quran" element={
+            <div>
+              <Quran/>
+            </div>
+          }/>
+        </Routes>
+        {/* end quran route */}
         {/* end of evining athkar page */}
         {/* missing_page route */}
         <Routes>

@@ -28,6 +28,14 @@
   border: 1px solid var(--main-i-color);
 }
 
+.bg-img {
+  background-image: url('../pic/bg4.png');
+}
+
+.surah {
+  line-height: 1.8rem;
+  font-size: 1rem;
+}
 
 /* 
 

@@ -43,7 +43,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/missing_page" className="nav-link disabled text-white">
+                <Link to="/quran" className="nav-link text-white">
                   القرآن الكريم
                 </Link>
               </li>
