@@ -43,5 +43,5 @@
 */
 
 * {
-  color: #FFF7AE /* imortant*/
+  color: var(--main-iii-color) !important /* #FFF7AE  imortant*/
 }

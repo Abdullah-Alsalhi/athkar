@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import axios from 'axios';
 import athkar from '../thekr-json/athkar.json';
 export default function Quran(props) {
+  // const id = props.id;
   const [ayah, setAyah] = useState([]);
   const getSurah = () => {
     axios
-      .get(`https://api.alquran.cloud/v1/surah/114`)
+      .get(`https://api.alquran.cloud/v1/surah/9`)
       .then((response) => {
         setAyah(response.data.data.ayahs)
         console.log(response.data.data.ayahs)
@@ -21,16 +22,19 @@ export default function Quran(props) {
           let first_aya = e.text.split("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ").join(' ');
           
           return (
-            `
-            ${bsm}
-            ${first_aya} (${e.numberInSurah}) 
-            `
+            <>
+            <p>
+            {bsm}
+            </p>
+            {first_aya} ({e.numberInSurah}) 
+            </>
             )
       }else{
         return (
-          `
-          ${e.text} (${e.numberInSurah}) 
-          `
+          <>
+           {e.text} ({e.numberInSurah}) 
+          </>
+          
         )
       }
       })
@@ -43,7 +47,7 @@ export default function Quran(props) {
             
                 <div className='my-3 shadow thek-cont' >
                       <h6 className='my-3' onClick={getSurah}>
-                        بسم الله الرحمن الرحيم
+                        ء
                       </h6>
                       <div className='surah'>
                       {mapOverAyah}
