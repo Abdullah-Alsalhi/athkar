@@ -15,6 +15,7 @@
   /* font-family: 'Jomhuria', cursive; */
   font-family: 'Noto Kufi Arabic', sans-serif;
   
+  
   color: #198754;
 }
 .btn-bg-ii{
@@ -23,7 +24,7 @@
 }
 ::selection {
   background-color: var(--main-i-color);
-  color: var(--main-iii-color);
+  color: var(--main-ii-color);
 }
 
 .thek-cont {
@@ -39,6 +40,8 @@
 
 .bg-img {
   background-image: url('../pic/bg4.png');
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .surah {
