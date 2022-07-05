@@ -4,11 +4,12 @@ import { toArabic } from "arabic-digits";
 
 export default function Quran(props) {
   // const id = props.id;
+  let pageNumber;
   const [surah_name, setSurah_name] = useState("");
   const [ayah, setAyah] = useState([]);
   const getSurah = () => {
     axios
-      .get(`https://api.alquran.cloud/v1/surah/2`)
+      .get(`https://api.alquran.cloud/v1/surah/5`)
       .then((response) => {
         setSurah_name(response.data.data.name);
         setAyah(response.data.data.ayahs);
@@ -29,34 +30,38 @@ export default function Quran(props) {
         <>
           <p>{bsm}</p>
           {/* ﴿١﴾ */}
-          {first_aya} ({toArabic(e.numberInSurah)})&nbsp;
+          {first_aya} <span style={{display:"inline-block",fontSize: "15px", backgroundColor: "#297F87", padding: "1px", borderRadius: "50%"}}>({toArabic(e.numberInSurah)})</span>&nbsp;
         </>
       );
     } else {
       return (
         /*  */
         <>
-          {e.text} ({toArabic(e.numberInSurah)}) &nbsp;
+          {e.text} <span style={{display:"inline-block",fontSize: "15px", backgroundColor: "#297F87", padding: "1px", borderRadius: "50%"}}>({toArabic(e.numberInSurah)})</span>{
+            e.page > pageNumber ? <div className="mt-1 mb-0"><p style={{display:"inline-block",fontSize: "15px", backgroundColor: "#297F87", padding: "1%", borderRadius: "35%"}}>{toArabic(e.page)}</p></div> : ''
+          }{e.page > pageNumber ? <hr/> : ""}&nbsp;
+        <span style={{display: "none"}}>{pageNumber = e.page}</span>
         </>
+        
       );
     }
   });
 
-  /* useEffect(()=>{
+  useEffect(()=>{
     getSurah();
-  },[]); */
+  },[]); 
   return (
     <div className="text-center">
-      <div className="row">
+      <div className="row" >
         <div className="col-md-12">
           {/* start maping from here */}
 
-          <div className="my-3 shadow thek-cont">
-            <h6 className="my-3" onClick={getSurah}>﴿
+          <div className="my-3 shadow thek-cont" >
+            <h6 className="my-3 bg-surah_name"  style={{display:"inline-block", backgroundColor: "#297F87", padding: "1%", borderRadius: "3px"}}>﴿
               {surah_name}﴾
             </h6>
             <div className="surah">
-              <h4 className="quran-font">{mapOverAyah}</h4>
+              <h4 className="quran-font" >{mapOverAyah}</h4>
             </div>
 
             {/* to here */}

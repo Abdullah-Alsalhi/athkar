@@ -4,7 +4,7 @@ import nawawi from "../thekr-json/nawawi.json";
 export default function Header() {
   return (
     <div className="text-center ">
-      <h3 style={{backgroundColor: "#297F87",color: "#F6D167", padding: "12px"}}>
+      <h3 style={{backgroundColor: "#297F87", padding: "1%", borderRadius: "3px"}}>
         ﴿ الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ اللَّهِ ۗ أَلَا
         بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ [ الرعد: 28]
       </h3>

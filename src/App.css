@@ -30,6 +30,13 @@
   border: 1px solid var(--main-i-color);
 }
 
+.bg-highlited {
+  background-color: "#297F87" !important;
+  display: "inline-block";
+  padding: "1%";
+  border-radius: "3px"
+}
+
 .bg-img {
   background-image: url('../pic/bg4.png');
 }
@@ -40,7 +47,7 @@
 }
 .quran-font {
   font-family: 'Lateef', cursive;
-
+  
 }
 /* 
 
@@ -48,5 +55,5 @@
 */
 
 * {
-  color: var(--main-iii-color) !important /* #FFF7AE  imortant*/
+  color: var(--main-iii-color) /* !important  #FFF7AE  imortant*/
 }
