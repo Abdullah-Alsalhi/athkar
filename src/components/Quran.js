@@ -3,7 +3,6 @@ import axios from "axios";
 import { toArabic } from "arabic-digits";
 
 export default function Quran() {
-  // const id = 100;
   const [allSurah, setAllSurah] = useState([]);
   const [surah_id, setSurah_id] = useState(0);
 
@@ -21,6 +20,7 @@ export default function Quran() {
         console.log("ERR", err);
       });
   };
+
   const mapOverAyah = ayah.map((e, i) => {
     if (e.text.startsWith("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ")) {
       let bsm = e.text.slice(0, 37);
@@ -100,12 +100,12 @@ export default function Quran() {
 
   const mapOverAllSurahs = allSurah.map((surah) => {
     return (
-      <div className="container my-0">
+      <div className="container my-0" key={Math.random() * 3000}>
         <div className="row">
           <div className="col">
             <button
               type="button"
-              class="btn btn-link"
+              className="btn btn-link"
               value={surah.number}
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -127,11 +127,11 @@ export default function Quran() {
   return (
     <>
       {/* accordian start */}
-      <div class="accordion " id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
+      <div className="accordion " id="accordionExample">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="headingOne">
             <button
-              class="accordion-button"
+              className="accordion-button"
               type="button"
               style={{ background: "#0a4c59" }}
               data-bs-toggle="collapse"
@@ -144,11 +144,16 @@ export default function Quran() {
           </h2>
           <div
             id="collapseOne"
-            class="accordion-collapse collapse show"
+            className="accordion-collapse collapse show"
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body " style={{backgroundColor: "#395B64"}}>{mapOverAllSurahs}</div>
+            <div
+              className="accordion-body "
+              style={{ backgroundColor: "#395B64" }}
+            >
+              {mapOverAllSurahs}
+            </div>
           </div>
         </div>
       </div>
