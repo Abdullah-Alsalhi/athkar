@@ -34,7 +34,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/missing_page"
+                  to="/surah_list"
                   className="nav-link text-white"
                   href="#"
                 >
@@ -47,7 +47,7 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex " role="search">
+            {/* <form className="d-flex " role="search">
               <input
                 disabled
                 className="form-control me-2 searchBar"
@@ -64,7 +64,7 @@ export default function Navbar() {
               >
                 ابحث
               </Link>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>

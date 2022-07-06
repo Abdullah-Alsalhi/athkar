@@ -24,6 +24,7 @@ export default function Header() {
   useEffect(() => {
     dailyAyah();
   }, []);
+  
   return (
     <div className="text-center">
       <div className="quran-font">

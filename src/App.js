@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Morning from "./components/Morning";
 import Quran from "./components/Quran";
 import Evining from "./components/Evining";
+
 function App() {
   return (
     <div className="App page">
@@ -81,8 +82,8 @@ function App() {
         {/* missing_page route */}
         <Routes>
           <Route
-            path="/missing_page"
-            element={<h1>لم يتم العمل على هذه الصفحة حتى الان</h1>}
+            path="/surah_list"
+            element={<h1>لاشيء لعرضه حتى الان</h1>}
           />
         </Routes>
         <Footer />

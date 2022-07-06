@@ -1,25 +1,24 @@
 /* importing the font of ciro */
 :root {
-  --main-i-color: #297F87;
-  --main-ii-color: #FFF7AE;
-  --main-iii-color: #F6D167;
-  --main-iv-color: #DF2E2E;
+  --main-i-color: #297f87;
+  --main-ii-color: #fff7ae;
+  --main-iii-color: #f6d167;
+  --main-iv-color: #df2e2e;
 }
-@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@700&family=Jomhuria&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@700&family=Jomhuria&family=Lateef&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@700&family=Jomhuria&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@700&family=Jomhuria&family=Lateef&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap");
 
 .App {
   direction: rtl;
   /* font-family: 'Blaka', cursive; */
   /* font-family: 'Cairo', sans-serif; */
   /* font-family: 'Jomhuria', cursive; */
-  font-family: 'Noto Kufi Arabic', sans-serif;
-  
-  
+  font-family: "Noto Kufi Arabic", sans-serif;
+
   color: #198754;
 }
-.btn-bg-ii{
-  background-color: #297F87;
+.btn-bg-ii {
+  background-color: #297f87;
   color: var(--main-iii-color);
 }
 ::selection {
@@ -35,11 +34,11 @@
   background-color: "#297F87" !important;
   display: "inline-block";
   padding: "1%";
-  border-radius: "3px"
+  border-radius: "3px";
 }
 
 .bg-img {
-  background-image: url('../pic/bg4.png');
+  background-image: url("../pic/bg4.png");
   opacity: 0.5;
   z-index: -1;
 }
@@ -49,8 +48,7 @@
   font-size: 1rem;
 }
 .quran-font {
-  font-family: 'Lateef', cursive;
-  
+  font-family: "Lateef", cursive;
 }
 /* 
 
@@ -58,5 +56,5 @@
 */
 
 * {
-  color: var(--main-iii-color) /* !important  #FFF7AE  imortant*/
+  color: white !important; /* #FFF7AE  imortant*/
 }
