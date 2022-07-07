@@ -1,6 +1,7 @@
 .ayah-random{
   color: var(--nice-main-i-color);
   font-family: "Lateef", cursive;
+  font-size: 1.2rem;
 }
 
 .mokhtarat {
@@ -11,12 +12,12 @@
 
 .ayah-ref {
   color: var(--nav-main-ii-color);
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .hadith-text {
   font-family: "Lateef", cursive;
   color: var(--nice-main-i-color);
-  
+  font-size: 1.2rem;
 }
 
