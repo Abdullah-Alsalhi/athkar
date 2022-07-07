@@ -1,0 +1,10 @@
+.btn-custom {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  background-color: var(--nice-main-i-color);
+  color: var(--nav-main-i-color);
+}
+
+.btn-custom:hover {
+  color: var(--nice-main-i-color);
+  background-color: var(--nav-main-i-color);
+}

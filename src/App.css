@@ -4,15 +4,28 @@
   --main-ii-color: #fff7ae;
   --main-iii-color: #f6d167;
   --main-iv-color: #df2e2e;
+  --nav-main-i-color: #f1f3f8;
+  --nav-main-ii-color: #8d93ab;
+  --nav-main-iii-color: #393b44;
+  --nice-main-i-color: #b4c6a6;
 }
 @import url("https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@700&family=Jomhuria&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@700&family=Jomhuria&family=Lateef&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap");
 
-.App {
+* {
   direction: rtl;
-  /* font-family: 'Blaka', cursive; */
-  /* font-family: 'Cairo', sans-serif; */
-  /* font-family: 'Jomhuria', cursive; */
+}
+::selection {
+  background-color: var(--nice-main-i-color);
+}
+.App {
+  background-color: #f1f3f8;
+}
+/*  
+.App {
+   font-family: 'Blaka', cursive; 
+   font-family: 'Cairo', sans-serif; 
+   font-family: 'Jomhuria', cursive; 
   font-family: "Noto Kufi Arabic", sans-serif;
 
   color: #198754;
@@ -50,11 +63,12 @@
 .quran-font {
   font-family: "Lateef", cursive;
 }
-/* 
+ 
 
 
-*/
+
 
 * {
-  color: white !important; /* #FFF7AE  imortant*/
+  color: white !important;  #FFF7AE  imortant
 }
+*/

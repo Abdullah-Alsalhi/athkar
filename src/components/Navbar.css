@@ -1,0 +1,27 @@
+.navbar {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  background-color: var(--nav-main-i-color);
+}
+
+.nav-link {
+  color: var(--nav-main-ii-color);
+  font-weight: bold;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--nice-main-i-color) !important;
+  font-weight: bold;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: var(--nice-main-i-color);
+  font-weight: bold;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: 1px solid var(--nice-main-i-color);
+  color: #b4c6a6;
+}

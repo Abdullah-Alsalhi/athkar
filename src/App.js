@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Routes, Route, Link } from "react-router-dom";
 
 import "./App.css";
@@ -19,15 +20,9 @@ function App() {
           <Route
             path="/"
             element={
-              <div className="d-grid gap-2 col-11 mx-auto mt-4">
+              
                 <Header />
-                <Link to="/sabah" className="btn btn-bg-ii" type="button">
-                  أذكار الصباح
-                </Link>
-                <Link to="/massa" className="btn btn-bg-ii" type="button">
-                  أذكار المساء
-                </Link>
-              </div>
+                
             }
           />
         </Routes>

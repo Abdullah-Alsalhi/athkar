@@ -1,33 +1,33 @@
+import './Navbar.css'
 import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div className="">
-      <nav className=" navbar navbar-expand-lg nv-bg shadow p-3 mb-5">
-        <div className="container-fluid">
+      <nav className=" navbar navbar-expand-lg nv-bg shadow p-3 ">
+        <div className="container">
           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Link className="navbar-brand text-white" to="/">
+          <Link className="navbar-brand" to="/">
             حصن المسلم
           </Link>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <div className="collapse navbar-collapse" id="main-nav">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link
                   to="/"
-                  className="nav-link active text-white"
+                  className="nav-link active"
                   aria-current="page"
-                  href="#"
                 >
                   الرئيسية
                 </Link>
@@ -35,36 +35,18 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   to="/surah_list"
-                  className="nav-link text-white"
+                  className="nav-link "
                   href="#"
                 >
                   أدعية نبوية
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/quran" className="nav-link text-white">
+                <Link to="/quran" className="nav-link">
                   القرآن الكريم
                 </Link>
               </li>
             </ul>
-            {/* <form className="d-flex " role="search">
-              <input
-                disabled
-                className="form-control me-2 searchBar"
-                type="search"
-                placeholder="اسم السورة..."
-                aria-label="Search"
-              />
-              <Link
-                disabled
-                to="/missing_page"
-                className="btn"
-                style={{ backgroundColor: "#297F87", color: "#F6D167" }}
-                type="submit"
-              >
-                ابحث
-              </Link>
-            </form> */}
           </div>
         </div>
       </nav>

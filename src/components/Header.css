@@ -1,0 +1,22 @@
+.ayah-random{
+  color: var(--nice-main-i-color);
+  font-family: "Lateef", cursive;
+}
+
+.mokhtarat {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  color: var(--nav-main-i-color);
+  background-color: var(--nice-main-i-color);
+}
+
+.ayah-ref {
+  color: var(--nav-main-ii-color);
+  font-size: 0.5rem;
+}
+
+.hadith-text {
+  font-family: "Lateef", cursive;
+  color: var(--nice-main-i-color);
+  
+}
+
