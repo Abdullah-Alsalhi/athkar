@@ -1,0 +1,40 @@
+/* start of accordion */
+
+.accordion-item {
+  background-color: var(--nice-main-i-color);
+}
+
+.accordion-button {
+  display: block !important;
+  text-align: center;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  background-color: var(--nav-main-iii-color) !important;
+  color: var(--nice-main-i-color) !important;
+  font-weight: bold;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-body {
+  background-color: var(--nav-main-iii-color);
+  color: white !important;
+}
+
+.btn-link {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  color: var(--nav-main-ii-color);
+}
+.btn-link:hover {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  color: var(--nice-main-i-color);
+}
+
+/* end of accordion */
+
+/* start of quran */
+
+
+
+
+
+/* end of quran */

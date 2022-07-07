@@ -1,3 +1,4 @@
+import "./Quran.css"
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toArabic } from "arabic-digits";
@@ -32,18 +33,7 @@ export default function Quran() {
         <>
           <p>{bsm}</p>
           {/* ﴿١﴾ */}
-          {first_aya}{" "}
-          <span
-            style={{
-              display: "inline-block",
-              fontSize: "15px",
-              backgroundColor: "#297F87",
-              padding: "1px",
-              borderRadius: "50%",
-            }}
-          >
-            ﴿{toArabic(e.numberInSurah)}﴾
-          </span>
+          {first_aya} <span>﴿{toArabic(e.numberInSurah)}﴾</span>
           &nbsp;
         </>
       );
@@ -51,31 +41,10 @@ export default function Quran() {
       return (
         /*  */
         <>
-          {e.text}{" "}
-          <span
-            style={{
-              display: "inline-block",
-              fontSize: "15px",
-              backgroundColor: "#297F87",
-              padding: "1px",
-              borderRadius: "50%",
-            }}
-          >
-            ﴿{toArabic(e.numberInSurah)}﴾
-          </span>
+          {e.text} <span>﴿{toArabic(e.numberInSurah)}﴾</span>
           {e.page > pageNumber ? (
             <div className="mt-1 mb-0">
-              <p
-                style={{
-                  display: "inline-block",
-                  fontSize: "15px",
-                  backgroundColor: "#297F87",
-                  padding: "1%",
-                  borderRadius: "35%",
-                }}
-              >
-                {toArabic(e.page)}
-              </p>
+              <p>{toArabic(e.page)}</p>
             </div>
           ) : (
             ""
@@ -100,24 +69,21 @@ export default function Quran() {
 
   const mapOverAllSurahs = allSurah.map((surah) => {
     return (
-      <div className="container my-0" key={Math.random() * 3000}>
-        <div className="row">
-          <div className="col">
-            <button
-              type="button"
-              className="btn btn-link"
-              value={surah.number}
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              onClick={(event) => {
-                setSurah_id(Number(event.target.value));
-                getSurah(Number(event.target.value));
-              }}
-            >
-              {toArabic(surah.number)}-{surah.name}
-            </button>
-          </div>
-        </div>
+      <div className="col-lg-4 col-md-4 col-sm-6">
+        <button
+          type="button"
+          className="btn btn-link"
+          value={surah.number}
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          key={Math.random() * 3000}
+          onClick={(event) => {
+            setSurah_id(Number(event.target.value));
+            getSurah(Number(event.target.value));
+          }}
+        >
+          {toArabic(surah.number)}-{surah.name}
+        </button>
       </div>
     );
   });
@@ -128,12 +94,11 @@ export default function Quran() {
     <>
       {/* accordian start */}
       <div className="accordion " id="accordionExample">
-        <div className="accordion-item">
+        <div className="accordion-item mt-4">
           <h2 className="accordion-header" id="headingOne">
             <button
               className="accordion-button"
               type="button"
-              style={{ background: "#0a4c59" }}
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
               aria-expanded="true"
@@ -148,11 +113,15 @@ export default function Quran() {
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div
-              className="accordion-body "
-              style={{ backgroundColor: "#395B64" }}
-            >
-              {mapOverAllSurahs}
+            <div className="accordion-body">
+              <div className="container my-0">
+                <div className="row">
+
+                    {mapOverAllSurahs}
+
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -166,17 +135,7 @@ export default function Quran() {
               {/* start maping from here */}
 
               <div className="my-3 shadow thek-cont ">
-                <h6
-                  className="my-3 bg-surah_name"
-                  style={{
-                    display: "inline-block",
-                    backgroundColor: "#297F87",
-                    padding: "1%",
-                    borderRadius: "3px",
-                  }}
-                >
-                  ﴿{surah_name}﴾
-                </h6>
+                <h6 className="my-3 bg-surah_name">﴿{surah_name}﴾</h6>
                 <div className="surah ">
                   <h4 className="quran-font ">{mapOverAyah}</h4>
                 </div>

@@ -1,6 +1,6 @@
 .navbar {
   font-family: "Noto Kufi Arabic", sans-serif;
-  background-color: var(--nav-main-i-color);
+  /* background-color: var(--nav-main-i-color); */
 }
 
 .nav-link {
