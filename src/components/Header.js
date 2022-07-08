@@ -27,7 +27,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="text-center mt-3">
+    <div className="text-center mt-3 container-fluid">
       <div className="ayah-random shadow p3 rounded-2">
         <p>
           ﴿{ayah_ran}﴾{" "}

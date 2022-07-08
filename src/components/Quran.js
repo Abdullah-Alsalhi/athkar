@@ -93,7 +93,7 @@ export default function Quran() {
   return (
     <>
       {/* accordian start */}
-      <div className="accordion " id="accordionExample">
+      <div className="accordion container-fluid" id="accordionExample">
         <div className="accordion-item mt-4">
           <h2 className="accordion-header" id="headingOne">
             <button
@@ -129,15 +129,15 @@ export default function Quran() {
       {/* accordian end */}
       {/* maping start here over the surah ayat */}
       {surah_id ? (
-        <div className="text-center ">
+        <div className="text-center container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12 surah_bg rounded-3 mt-3">
               {/* start maping from here */}
 
-              <div className="my-3 shadow thek-cont ">
-                <h6 className="my-3 bg-surah_name">﴿{surah_name}﴾</h6>
-                <div className="surah ">
-                  <h4 className="quran-font ">{mapOverAyah}</h4>
+              <div className="my-3 shadow thek-cont bg-surah_name">
+                <h6 className="my-3 ">﴿{surah_name}﴾</h6>
+                <div className="surah">
+                  <h4 className="quran-font">{mapOverAyah}</h4>
                 </div>
 
                 {/* to here */}

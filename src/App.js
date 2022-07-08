@@ -12,7 +12,7 @@ import Evining from "./components/Evining";
 
 function App() {
   return (
-    <div className="App page">
+    <div className="App page ">
       <Navbar />
       <div className="container">
         {/* this route will take you to / */}

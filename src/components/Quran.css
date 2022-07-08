@@ -33,8 +33,27 @@
 
 /* start of quran */
 
+.bg-surah_name {
 
 
+  background-color: var(--nice-main-i-color);  font-size: 1.2rem;
+}
+
+.surah_bg {
+  background-color: var(--nice-main-i-color);
+}
+.thek-cont {
+  border: 1px solid var(--nav-main-ii-color);
+  background-color: var(--nav-main-i-color);
+  font-family: "Lateef", cursive;
+  border-radius: 3px;
+}
+
+.quran-font {
+  color: var(--nav-main-iii-color);
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
 
 
 /* end of quran */
