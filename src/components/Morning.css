@@ -1,0 +1,39 @@
+.thekr-container {
+  border: 1px solid var(--nice-main-i-color);
+  border-radius: 5px;
+}
+
+.title {
+  color: var(--nice-main-ii-color);
+  font-family: "Lateef", cursive;
+  font-size: 1rem;
+}
+
+.thekr-desc {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  color: var(--nice-main-ii-color);
+  font-size: 0.7rem;
+}
+
+
+.thekr {
+  font-family: "Lateef", cursive;
+  color: var(--nice-main-i-color);
+  font-size: 1.5rem;
+}
+
+.btn-success {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  background-color: var(--nice-main-i-color);
+  color: var(--nav-main-i-color);
+}
+
+.btn-success:hover {
+  color: var(--nice-main-i-color);
+  background-color: var(--nav-main-i-color);
+}
+
+
+.btn-success:focus {
+  box-shadow: none;
+}

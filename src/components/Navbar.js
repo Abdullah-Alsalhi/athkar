@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="">
+    <div className="nav-z-index">
       <nav className=" navbar navbar-expand-lg nv-bg shadow p-3 ">
         <div className="container">
           <button

@@ -25,3 +25,13 @@
   border: 1px solid var(--nice-main-i-color);
   color: #b4c6a6;
 }
+
+.nav-z-index{
+  opacity: 0.5;
+}
+
+
+.nav-z-index:hover {
+  opacity: 1;
+  display: sticky;
+}

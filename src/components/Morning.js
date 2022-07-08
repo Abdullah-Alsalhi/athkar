@@ -1,3 +1,4 @@
+import "./Morning.css"
 import React from "react";
 import athkar from "../thekr-json/athkar.json";
 import { toArabic } from "arabic-digits";
@@ -11,14 +12,14 @@ export default function Morning() {
             .filter((e) => e.category === "أذكار الصباح")
             .map((e) => {
               return (
-                <div className="my-3 shadow thek-cont">
-                  <h6 className="my-3">{e.reference}</h6>
-                  <p className="">{e.zekr}</p>
-                  <p className="">{e.description}</p>
+                <div className="my-3 shadow container thekr-container">
+                  <h6 className="my-3 title">{e.reference}</h6>
+                  <p className="thekr">{e.zekr}</p>
+                  <p className="thekr-desc">{e.description}</p>
                   <div className="d-grid gap-2 col-11 mx-auto mt-4">
                     <button
-                      className="btn btn-bg-ii col-md-12 my-3"
-                      style={{ color: "#F6D167", fontSize: "1.2rem" }}
+                      className="btn btn-success col-md-12 my-3"
+                      
                       onClick={(event) => {
                         if (event.target.innerText == "انتقل للذكر التالي") {
                           event.target.disabled = true;
