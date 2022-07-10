@@ -27,29 +27,33 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="text-center mt-3 container-fluid">
-      <div className="ayah-random shadow p3 rounded-2">
-        <p>
+    <div className="container  pt-5">
+
+
+    <div className="row  justify-content-center align-items-center">
+
+      <div className="col-lg-4 shadow p-3 ">
+        <p className="text-center">
           ﴿{ayah_ran}﴾{" "}
-          <span className="ayah-ref">
+          <span className="">
             (آية {ayah_number_in_surah} من {surah_name})
           </span>
         </p>
       </div>
 
-      <div className="mt-3 shadow rounded-2">
-        <div className="row ">
-          <div className="col-md-12">
-            <h6 className="mokhtarat p-1 rounded-1">
-              مختارات من اﻷربعين النووية
-            </h6>
-          </div>
-          <div className="hadith-text">
-            <p>{nawawi[Math.ceil(Math.random() * 42)].hadith}</p>
-          </div>
-        </div>
+      <div className="col-lg-1 mt-4"></div>
+
+      <div className="col-lg-7 p-3 shadow">
+        <h5 className="text-center ">
+          مختارات من اﻷربعين النووية
+        </h5>
+        <p>{nawawi[Math.ceil(Math.random() * 42)].hadith}</p>
       </div>
-      <Buttons />
+
+
+      
+    </div>
+    <Buttons />
     </div>
   );
 }

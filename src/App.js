@@ -2,7 +2,7 @@ import React from "react";
 
 import { Routes, Route, Link } from "react-router-dom";
 
-// import "./App.css";
+import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -12,7 +12,7 @@ import Evining from "./components/Evining";
 
 function App() {
   return (
-    <div className="container">
+    <div className="App">
       <Navbar />
 
         {/* this route will take you to / */}
@@ -33,9 +33,9 @@ function App() {
           <Route
             path="/sabah"
             element={
-              <div className="d-grid gap-2 col-11 mx-auto mt-4">
+              <div className="">
                 <Morning />
-                <Link to="/" className="btn btn-success" type="button">
+                <Link to="/" className="" type="button">
                   إلى الصفحة الرئيسية
                 </Link>
               </div>
@@ -51,11 +51,11 @@ function App() {
             element={
               <div>
                 <Evining />
-                <div className="d-grid gap-2 col-11 mx-auto mt-4">
-                  <Link to="/" className="btn btn-success" type="button">
+                
+                  <Link to="/" className="" type="button">
                     إلى الصفحة الرئيسية
                   </Link>
-                </div>
+               
               </div>
             }
           />
@@ -66,9 +66,9 @@ function App() {
           <Route
             path="/quran"
             element={
-              <div>
+              
                 <Quran />
-              </div>
+              
             }
           />
         </Routes>
@@ -82,7 +82,6 @@ function App() {
           />
         </Routes>
         <Footer />
-
     </div>
   );
 }

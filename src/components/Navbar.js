@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="nav-z-index">
-      <nav className=" navbar navbar-expand-lg nv-bg shadow p-3 ">
-        <div className="container">
+    <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg nv-bg shadow p-3 ">
           <button
             className="navbar-toggler"
             type="button"
@@ -22,7 +21,7 @@ export default function Navbar() {
             حصن المسلم
           </Link>
           <div className="collapse navbar-collapse" id="main-nav">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-md-2 mb-lg-0">
               <li className="nav-item">
                 <Link
                   to="/"
@@ -36,7 +35,6 @@ export default function Navbar() {
                 <Link
                   to="/surah_list"
                   className="nav-link "
-                  href="#"
                 >
                   أدعية نبوية
                 </Link>
@@ -48,8 +46,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
       </nav>
-    </div>
+  </div>
   );
 }
