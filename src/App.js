@@ -2,7 +2,7 @@ import React from "react";
 
 import { Routes, Route, Link } from "react-router-dom";
 
-import "./App.css";
+// import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -12,9 +12,9 @@ import Evining from "./components/Evining";
 
 function App() {
   return (
-    <div className="App page ">
+    <div className="container">
       <Navbar />
-      <div className="container">
+
         {/* this route will take you to / */}
         <Routes>
           <Route
@@ -82,7 +82,7 @@ function App() {
           />
         </Routes>
         <Footer />
-      </div>
+
     </div>
   );
 }

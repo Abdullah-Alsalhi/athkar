@@ -1,4 +1,4 @@
-import "./Morning.css";
+// import "./Morning.css";
 
 import React from "react";
 import athkar from "../thekr-json/athkar.json";

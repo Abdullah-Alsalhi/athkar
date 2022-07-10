@@ -1,4 +1,4 @@
-import "./Header.css";
+// import "./Header.css";
 import React, { useState, useEffect } from "react";
 import nawawi from "../thekr-json/nawawi.json";
 import axios from "axios";

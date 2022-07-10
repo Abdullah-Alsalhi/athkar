@@ -1,4 +1,4 @@
-import "./Quran.css"
+// import "./Quran.css"
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toArabic } from "arabic-digits";
