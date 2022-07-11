@@ -27,15 +27,15 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="container  pt-5">
+    <div className="container pt-5">
 
 
-    <div className="row  justify-content-center align-items-center">
+    <div className="row justify-content-center align-items-center">
 
       <div className="col-lg-4 shadow p-3 ">
-        <p className="text-center">
+        <p className="text-center h2">
           ﴿{ayah_ran}﴾{" "}
-          <span className="">
+          <span className="h6">
             (آية {ayah_number_in_surah} من {surah_name})
           </span>
         </p>
@@ -44,16 +44,16 @@ export default function Header() {
       <div className="col-lg-1 mt-4"></div>
 
       <div className="col-lg-7 p-3 shadow">
-        <h5 className="text-center ">
+        <h5 className="text-center h1">
           مختارات من اﻷربعين النووية
         </h5>
-        <p>{nawawi[Math.ceil(Math.random() * 42)].hadith}</p>
+        <p className="h4">{nawawi[Math.ceil(Math.random() * 42)].hadith}</p>
       </div>
 
 
       
     </div>
-    <Buttons />
+    <Buttons/>
     </div>
   );
 }
