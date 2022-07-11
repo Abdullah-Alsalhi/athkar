@@ -31,7 +31,7 @@ export default function Quran() {
 
       return (
         <>
-          <p className="text-center h1">{bsm}</p>
+          <p className="h1">{bsm}</p>
           {/* ﴿١﴾ */}
           <span className="h2">{first_aya}</span>
           <small className="h6"> ﴿{toArabic(e.numberInSurah)}﴾</small>
@@ -44,7 +44,7 @@ export default function Quran() {
         <span className="">
           {e.text} <small className="h6">﴿{toArabic(e.numberInSurah)}﴾ </small>
           {e.page > pageNumber ? (
-            <div className="card-footer mt-3 text-center h6">
+            <div className="card-footer mt-3 h6">
               <p>{toArabic(e.page)}</p>
             </div>
           ) : (
@@ -124,13 +124,13 @@ export default function Quran() {
       {/* accordian end */}
       {/* maping start here over the surah ayat */}
       {surah_id ? (
-        <div className="container my-4">
-          <div className="row shadow">
+        <div className="container my-4 con text-center shadow p-3">
+          <div className="row shadow p-3">
             <div className="col-md-2 col-sm-0 shadow"></div>
             <div className="col-md-8 col-sm-12 shadow">
               {/* start maping from here */}
 
-              <div className="card shadow">
+              <div className="card border-5 p-4">
                 <h6 className="card-header text-center h1">﴿{surah_name}﴾</h6>
                 <div className="card-body">
                   <h4 className="h2">{mapOverAyah}</h4>
@@ -139,7 +139,7 @@ export default function Quran() {
                 {/* to here */}
               </div>
             </div>
-            <div className="col-md-2 col-sm-0"></div>
+            <div className="col-md-2 col-sm-0 shadow"></div>
           </div>
         </div>
       ) : (
