@@ -12,7 +12,7 @@ export default function Quran() {
   const [ayah, setAyah] = useState([]);
   const getSurah = (surah_id) => {
     axios
-      .get(`https://api.alquran.cloud/v1/surah/${surah_id}`)
+      .get(`https://api.alquran.cloud/v1/surah/${surah_id}/quran-uthmani`)
       .then((response) => {
         setSurah_name(response.data.data.name);
         setAyah(response.data.data.ayahs);
@@ -23,10 +23,10 @@ export default function Quran() {
   };
 
   const mapOverAyah = ayah.map((e, i) => {
-    if (e.text.startsWith("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ")) {
+    if (e.text.startsWith("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ")) {
       let bsm = e.text.slice(0, 37);
       let first_aya = e.text
-        .split("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ")
+        .split("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ")
         .join(" ");
 
       return (
@@ -124,13 +124,13 @@ export default function Quran() {
       {/* accordian end */}
       {/* maping start here over the surah ayat */}
       {surah_id ? (
-        <div className="container my-4 con text-center shadow p-3">
-          <div className="row shadow p-3">
+        <div className="container my-4 con text-center shadow p-md-3">
+          <div className="row shadow p-md-3">
             <div className="col-md-2 col-sm-0 shadow"></div>
             <div className="col-md-8 col-sm-12 shadow">
               {/* start maping from here */}
 
-              <div className="card border-5 p-4">
+              <div className="card border-5 p-md-3">
                 <h6 className="card-header text-center h1">﴿{surah_name}﴾</h6>
                 <div className="card-body">
                   <h4 className="h2">{mapOverAyah}</h4>
