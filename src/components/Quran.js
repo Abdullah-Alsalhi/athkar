@@ -34,7 +34,7 @@ export default function Quran() {
           <p className="text-center h1">{bsm}</p>
           {/* ﴿١﴾ */}
           <span className="h2">{first_aya}</span>
-          <span className="h5"> ﴿{toArabic(e.numberInSurah)}﴾</span>
+          <small className="h6"> ﴿{toArabic(e.numberInSurah)}﴾</small>
           &nbsp;
         </>
       );
@@ -42,7 +42,7 @@ export default function Quran() {
       return (
         /*  */
         <span className="">
-          {e.text} <span className="h5">﴿{toArabic(e.numberInSurah)}﴾ </span>
+          {e.text} <small className="h6">﴿{toArabic(e.numberInSurah)}﴾ </small>
           {e.page > pageNumber ? (
             <div className="card-footer mt-3 text-center h6">
               <p>{toArabic(e.page)}</p>
