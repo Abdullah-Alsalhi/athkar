@@ -31,27 +31,27 @@ export default function Quran() {
 
       return (
         <>
-          <p>{bsm}</p>
+          <p className="text-center h1">{bsm}</p>
           {/* ﴿١﴾ */}
-          {first_aya} <span>﴿{toArabic(e.numberInSurah)}﴾</span>
+          <span className="h2">{first_aya}</span>
+          <span className="h5"> ﴿{toArabic(e.numberInSurah)}﴾</span>
           &nbsp;
         </>
       );
     } else {
       return (
         /*  */
-        <>
-          {e.text} <span>﴿{toArabic(e.numberInSurah)}﴾</span>
+        <span className="">
+          {e.text} <span className="h5">﴿{toArabic(e.numberInSurah)}﴾ </span>
           {e.page > pageNumber ? (
-            <div className="mt-1 mb-0">
+            <div className="card-footer mt-3 text-center h6">
               <p>{toArabic(e.page)}</p>
             </div>
           ) : (
             ""
           )}
-          {e.page > pageNumber ? <hr /> : ""}&nbsp;
           <span style={{ display: "none" }}>{(pageNumber = e.page)}</span>
-        </>
+        </span>
       );
     }
   });
@@ -69,7 +69,7 @@ export default function Quran() {
 
   const mapOverAllSurahs = allSurah.map((surah) => {
     return (
-      <div className="col-lg-4 col-md-4 col-sm-6">
+      <div className="">
         <button
           type="button"
           className="btn btn-link"
@@ -115,13 +115,8 @@ export default function Quran() {
           >
             <div className="accordion-body">
               <div className="container my-0">
-                <div className="row">
-
-                    {mapOverAllSurahs}
-
-                </div>
+                <div className="row">{mapOverAllSurahs}</div>
               </div>
-
             </div>
           </div>
         </div>
@@ -129,20 +124,22 @@ export default function Quran() {
       {/* accordian end */}
       {/* maping start here over the surah ayat */}
       {surah_id ? (
-        <div className="text-center container">
-          <div className="row">
-            <div className="col-md-12 surah_bg rounded-3 mt-3">
+        <div className="container my-4">
+          <div className="row shadow">
+            <div className="col-md-2 col-sm-0 shadow"></div>
+            <div className="col-md-8 col-sm-12 shadow">
               {/* start maping from here */}
 
-              <div className="my-3 shadow thek-cont bg-surah_name">
-                <h6 className="my-3 ">﴿{surah_name}﴾</h6>
-                <div className="surah">
-                  <h4 className="quran-font">{mapOverAyah}</h4>
+              <div className="card shadow">
+                <h6 className="card-header text-center h1">﴿{surah_name}﴾</h6>
+                <div className="card-body">
+                  <h4 className="h2">{mapOverAyah}</h4>
                 </div>
 
                 {/* to here */}
               </div>
             </div>
+            <div className="col-md-2 col-sm-0"></div>
           </div>
         </div>
       ) : (

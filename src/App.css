@@ -18,9 +18,7 @@
   font-family: "Lateef", cursive;
 
 }
-::selection {
-  background-color: var(--nice-main-i-color);
-}
+
 
 
 /* 
