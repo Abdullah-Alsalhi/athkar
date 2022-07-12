@@ -4,8 +4,11 @@ import nawawi from "../thekr-json/nawawi.json";
 import axios from "axios";
 import { toArabic } from "arabic-digits";
 import Buttons from "./Buttons";
+import HjDate from "./HjDate";
 export default function Header() {
   const [random_ayah, setRandom_ayah] = useState([]);
+  
+
   const dailyAyah = () => {
     const ayah_id = Math.floor(Math.random() * 6236);
     axios
@@ -27,12 +30,13 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="container pt-5">
+    <div className="pt-5">
 
+    <div className="jumbotron container">
+      <HjDate/>
+      <div className="row justify-content-center align-items-center">
 
-    <div className="row justify-content-center align-items-center">
-
-      <div className="col-lg-4 shadow p-3 ">
+      <div className="col-md-4 shadow p-3 ">
         <p className="text-center h2">
           ﴿{ayah_ran}﴾{" "}
           <span className="h6">
@@ -41,9 +45,9 @@ export default function Header() {
         </p>
       </div>
 
-      <div className="col-lg-1 mt-4"></div>
+      <div className="col-md-1 mt-4"></div>
 
-      <div className="col-lg-7 p-3 shadow">
+      <div className="col-md-7 p-3 shadow">
         <h5 className="text-center h1">
           مختارات من اﻷربعين النووية
         </h5>
@@ -53,7 +57,10 @@ export default function Header() {
 
       
     </div>
+    </div>
     <Buttons/>
+
+    
     </div>
   );
 }
