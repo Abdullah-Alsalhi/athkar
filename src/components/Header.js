@@ -30,7 +30,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="pt-5">
+    <div className="pt-5 vh-100">
 
     <div className="jumbotron container">
       <HjDate/>
