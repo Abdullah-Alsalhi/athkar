@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: athkar-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: athkar-app
+  template:
+    metadata:
+      labels:
+        app: athkar-app
+    spec:
+      containers:
+      - name: athkar-app
+        image: abdullahalsalhi/athkar_app
+        # resources:
+        #   limits:
+        #     memory: "128Mi"
+        #     cpu: "500m"
+        ports:
+        - containerPort: 3000
